@@ -10,51 +10,45 @@
     <script src="/8-jan-24-mstrpyyy/JS/script.js" defer></script>
 
 </head>
-<body>
+<body>    
     <header>
         <h1>KATIK</h1>
         <h2>Kalkulator Luas dan Keliling Persegi</h2>
     </header>
 
 
-    <section >
-        <p class="upperhalf">Halo, mari hitung luas dan keliling persegi!</p>
-<!-- <label for="hitung" id="lblhitung">HITUNG:</label> -->
-    <select id="hitung" onchange="changeCalculationType()">
-        <option value="luas">LUAS PERSEGI</option>
-        <option value="keliling">KELILING PERSEGI</option>
-    </select>
-</section>
+    <section class="upperhalf">
+        <p class="calltoaction">Halo, mari hitung luas dan keliling persegi!</p>
+        <select id="count" onchange="changeCalculationType()">
+            <option value="luas">LUAS PERSEGI</option>
+            <option value="keliling">KELILING PERSEGI</option>
+        </select>
+    </section>
+
 
     <section class="middlehalf">
         <div class="persegi-container">
-            <img src="/8-jan-24-mstrpyyy/Persegi.png" id="persegi">
+            <img src="/8-jan-24-mstrpyyy/Persegi.png" id="square">
         </div>
-
-        <div class="rumus">
-            <h4 id="resultLabel2">Rumus Luas Persegi</h4>
-                <p id="resultLabel3">L = S x S</p>
+        <div class="formula">
+            <h4 id="formula">Rumus Luas Persegi</h4>
+                <p id="formulaBreakdown">L = S x S</p>
         </div>
-
-        <div class="keterangan">
+        <div class="description">
             <h4>keterangan</h4>
-            <p id="resultLabel4">L = Luas</p>
+            <p id="descriptionBreakdown">L = Luas</p>
             <p>S = Sisi</p>
 
         </div>
     </section>
 
 
-    <section class="inputsection">
-        <label for="squareside" id="resultLabel5">Hitung Luas Persegi</label>
+    <section class="lowerhalf">
+        <label for="squareside" id="calculate">Hitung Luas Persegi</label>
         <input type="number" id="squareside">
-
         <div class="step">
-            <p id="resultLabel6"></p>
+            <p id="calculateBreakdown"></p>
         </div>
-
-
-
         <div class="button">
             <button id="calculateButton" class="katikbutton" onclick="calculate()">Hitung</button>
             <button id="resetButton" class="katikbutton" onclick="reset()">Reset</button>

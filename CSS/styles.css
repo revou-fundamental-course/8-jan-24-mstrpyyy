@@ -33,7 +33,7 @@ header h2 {
     text-transform: uppercase;
 }
 
-.upperhalf {
+.calltoaction {
     background-color:#8AEA92;
     padding: 0.3em;
     text-align: center;
@@ -41,11 +41,7 @@ header h2 {
     font-size: 1rem;
 }
 
-/* .upperhalf label {
-    line-height: 2rem;
-} */
-
-#hitung {
+#count {
     width: 100%;
     padding: 0.5rem;
     padding-left: 6%;
@@ -59,7 +55,7 @@ header h2 {
     outline: none;
 }
 
-#hitung:hover {
+#count:hover {
     cursor: pointer;
     background-color: #F5DBD5;
     color: #212D40;
@@ -78,29 +74,23 @@ header h2 {
     color: #F5DBD5;
 }
 
-#persegi {
+#square {
     width: 55%;
     margin-top: -20px;
     margin-left: 23%;
 }
 
 
-.rumus {
+.formula {
     text-align: center;
     margin-top: -10px;
 }
 
-.keterangan {
+.description {
     margin-left: 20px;
 }
 
-.selectedHitung {
-    display: inline-block;
-    background-color: #8AEA92;
-    padding: 10px;
-}
-
-.inputsection {
+.lowerhalf {
     display: flex;
     flex-direction: column;
     background-color: #11151C;
@@ -109,7 +99,7 @@ header h2 {
     border-radius: 0 0 20px 20px;
 }
 
-#resultLabel5 {
+#calculate {
     padding: 5px;
 }
 
@@ -127,7 +117,7 @@ header h2 {
     color: #212D40;
 }
 
-#resultLabel6 {
+#calculateBreakdown {
     text-align: start;
     margin: 10px auto 10px 40%;
     min-height: 60px;
