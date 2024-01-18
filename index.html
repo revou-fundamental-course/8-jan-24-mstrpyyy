@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik Persegi</title>
+
+    <link rel="stylesheet" href="/8-jan-24-mstrpyyy/CSS/styles.css">
+    <script src="/8-jan-24-mstrpyyy/JS/script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>KATIK</h1>
+        <h2>Kalkulator Luas dan Keliling Persegi</h2>
+    </header>
+
+
+    <section >
+        <p class="upperhalf">Halo! mari hitung luas dan keliling persegi.</p>
+<!-- <label for="hitung" id="lblhitung">HITUNG:</label> -->
+    <select id="hitung" onchange="changeCalculationType()">
+        <option value="luas">LUAS PERSEGI</option>
+        <option value="keliling">KELILING PERSEGI</option>
+    </select>
+</section>
+
+    <section class="middlehalf">
+        <br>
+        <div class="persegi-container">
+            <img src="/8-jan-24-mstrpyyy/Image/Persegi.png" id="persegi">
+        </div>
+
+        <div class="rumus">
+            <h4 id="resultLabel2">Rumus Luas Persegi</h4>
+                <p id="resultLabel3">L = S x S</p>
+        </div>
+
+        <div class="keterangan">
+            <h4>keterangan</h4>
+            <p id="resultLabel4">L = Luas</p>
+            <p>S = Sisi</p>
+            <br>
+        </div>
+    </section>
+
+
+    <section class="inputsection">
+        <label for="squareside" id="resultLabel5">Hitung Luas Persegi</label>
+        <input type="number" id="squareside">
+
+        <p id="resultLabel6"></p>
+
+
+        <div class="button">
+            <button id="calculateButton" class="katikbutton" onclick="calculate()">Hitung</button>
+            <button id="resetButton" class="katikbutton" onclick="reset()">Reset</button>
+        </div>
+    </section>
+</body>
+</html>
