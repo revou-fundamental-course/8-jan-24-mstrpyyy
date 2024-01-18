@@ -32,7 +32,6 @@ function calculate() {
     var squaresideInput = document.getElementById("squareside").value;
     var calculateBreakdown = document.getElementById("calculateBreakdown");
 
-    // Check if squaresideInput is not empty
     if (squaresideInput.trim() !== "") {
         if (!isNaN(squaresideInput)) {
             var side = parseFloat(squaresideInput);
@@ -46,7 +45,6 @@ function calculate() {
             calculateBreakdown.innerHTML = "K = 4 x S<br>K = 4 x " + side + "<br>K = " + keliling;
         }
     } else {
-        // Clear the previous result if squaresideInput is empty
         calculateBreakdown.innerHTML = "";
     }
 }
